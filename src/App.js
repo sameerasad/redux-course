@@ -1,9 +1,10 @@
 import "./App.css";
+import Parent from "./Parent";
 
 function App() {
   return (
     <div>
-      <h1> Hello World!</h1>
+      <Parent name=" Child " />
     </div>
   );
 }
