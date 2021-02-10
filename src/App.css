@@ -1,9 +1,15 @@
 .App {
   text-align: center;
   padding: 10%;
+  color: aqua;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  border-radius: 10;
+  border-top: aqua;
+}
+.counter:hover {
+  color: blue;
+}
+.data:hover {
+  color: blue;
 }
