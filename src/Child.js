@@ -23,7 +23,7 @@ function Child(props) {
           setcount(count - 1);
         }}
       >
-        Click here for decreament
+        Click here for decreament the counter
       </button>
     </div>
   );
