@@ -10,12 +10,13 @@ function FetchData() {
       setData(Result.data);
     }
     getUsers();
-  });
+    console.log(Data);
+  }, []);
   return (
     <div>
       <ul className="data">
         {Data.map((user) => (
-          <li key={user.id}> {user.phone}</li>
+          <li key={user.id}> {user.name}</li>
         ))}
       </ul>
     </div>
