@@ -5,7 +5,7 @@ function FetchData() {
   const [Data, setData] = useState([]);
   useEffect(() => {
     async function getUsers() {
-      const Result = await axios("https://jsonplaceholder.typicode.com/users");
+      const Result = await axios("https://covid19.mathdro.id/api/confirmed");
       console.log(Result);
       setData(Result.data);
     }
@@ -15,8 +15,8 @@ function FetchData() {
   return (
     <div>
       <ul className="data">
-        {Data.map((user) => (
-          <li key={user.id}> {user.name}</li>
+        {Data.map((cases) => (
+          <li key={cases.uid}> {cases.provinceState}</li>
         ))}
       </ul>
     </div>
