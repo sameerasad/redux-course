@@ -11,7 +11,7 @@ function FetchData() {
     }
     getUsers();
     console.log(Data);
-  }, []);
+  }, [setData]);
   return (
     <div>
       <ul className="data">
